@@ -1,0 +1,51 @@
+.catalog{
+    background-image: url("../../Assets/img/chair.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 100px 0 300px 0;
+
+    &__list{
+        position: absolute;
+        list-style: none;
+        left: 80%;
+        top: 27%;
+    }
+
+    &__lists{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 8%;
+        top: 88%;
+        list-style: none;
+    }
+}
+
+@media (max-width:520px) {
+    
+    .container{
+        width: 400px;
+    }
+    .catalog{
+
+        &__list{
+            left: 75%;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    
+    .container{
+        width: 330px;
+    }
+
+    .catalog{
+
+        &__list{
+            top: 50%;
+            left: 70%;
+        }
+    }
+}
